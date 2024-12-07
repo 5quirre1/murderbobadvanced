@@ -9,7 +9,7 @@ its also a buggy mess that requires javafx sooo use at your own sanity's risk
 I'm sorry that you'll probably never have the full game. I fucking hate java 😭 -5quirre1
 # notes from dev
 
-Another day... Another dime
+Another day... Another dime 
 
 -@5quirre1
 ![image](https://github.com/user-attachments/assets/27ac99ee-bb09-43fc-bf2f-e06f11302326)
