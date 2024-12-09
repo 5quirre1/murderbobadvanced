@@ -1,4 +1,5 @@
 import cv2
+import time
 def cutscene1():
     cap = cv2.VideoCapture('cutscenes/cutscene1.mp4')
     if (cap.isOpened()== False):
@@ -43,6 +44,31 @@ def game():
         cutscene2()
     if (opt == "Settings" or opt == "settings"):
         print("Nothing's here.. greg")
+        print("-----------------------------------------")
+        game()
     if (opt == "Credits" or opt == "credits"):
-        print("ill cook soon - wish")
+        print("Credits")
+        time.sleep(2)
+        print("Thanks to Python and YouTube Music for making the grind possible 🔥")
+        time.sleep(2)
+        print("Thanks Google Slides for being a place to create cutscenes! :D")
+        time.sleep(2)
+        print("And now... for the people!")
+        time.sleep(2)
+        print("Give a standing ovation to:")
+        time.sleep(2)
+        print("Squirrel, for creating the original game, MurderBob, creating this idea, and for pretty much everything else too!")
+        time.sleep(2)
+        print("Names, for creating the cutscenes and lore!")
+        time.sleep(2)
+        print("Wish, for creating the Python version, cutscenes, and lore!")
+        time.sleep(2)
+        print("Hypercuber and Spruce for creating some of the graphics we use!")
+        time.sleep(2)
+        print("You, for always helping our journey and supporting us.")
+        time.sleep(2)
+        print("Thanks :) - Wish")
+        print("-----------------------------")
+        time.sleep(5)
+        game()
 game()
