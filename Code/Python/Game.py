@@ -30,13 +30,21 @@ def credits():
     gameUI()
 def quit():
     m.destroy()
+def settingsUI():
+    h = tkinter.Tk()
+    w = tkinter.Label(h, text="Settings")
+    ww = tkinter.Label(h, text="sorry nothing is here yet")
+    w.pack()
+    ww.pack()
 def gameUI():
     w = tkinter.Label(m, text='MurderBobADVANCED')
     ww = tkinter.Button(m, text='Play', width=25, command=lambda: cutscene1())
     www = tkinter.Button(m, text='Credits', width=25, command=lambda: credits())
+    wwww = tkinter.Button(m, text="Settings", width=25, command=lambda: settingsUI())
     w.pack()
     ww.pack()
     www.pack()
+    wwww.pack()
     m.mainloop()
 def cutscene1():
     quit()
