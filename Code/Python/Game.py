@@ -1,6 +1,17 @@
 import cv2
 import time
+import tkinter
+m = tkinter.Tk()
+def quit():
+    m.destroy()
+def gameUI():
+    w = tkinter.Label(m, text='MurderBobADVANCED')
+    ww = tkinter.Button(m, text='Play', width=25, command=lambda: cutscene1())
+    w.pack()
+    ww.pack()
+    m.mainloop()
 def cutscene1():
+    quit()
     cap = cv2.VideoCapture('cutscenes/cutscene1.mp4')
     if (cap.isOpened()== False):
         print("Error opening video file")
@@ -18,6 +29,7 @@ def cutscene1():
             break
 
     cap.release()
+    cutscene2()
 def cutscene2():
     cap = cv2.VideoCapture('cutscenes/cutscene2.mp4')
     if (cap.isOpened()== False):
@@ -33,6 +45,7 @@ def cutscene2():
     cap.release()
     cv2.destroyAllWindows()
 def game():
+    # ill MAYBE try to translate this into UI but idk....
     print("MurderbobADVANCED")
     print("A new era for MurderBob.")
     print("Play")
@@ -71,4 +84,4 @@ def game():
         print("-----------------------------")
         time.sleep(5)
         game()
-game()
+gameUI()
