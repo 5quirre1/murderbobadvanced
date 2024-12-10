@@ -1,7 +1,6 @@
 import cv2
 import time
 import tkinter
-m = tkinter.Tk()
 def credits():
     m.destroy
     print("Credits")
@@ -28,15 +27,22 @@ def credits():
     print("-----------------------------")
     time.sleep(5)
     gameUI()
-def quit():
+def quitMain():
     m.destroy()
+def quitSettings():
+    h.destroy()
 def settingsUI():
+    global h 
     h = tkinter.Tk()
     w = tkinter.Label(h, text="Settings")
     ww = tkinter.Label(h, text="sorry nothing is here yet")
+    www = tkinter.Button(h, text='Exit', width=25, command=lambda: quitSettings())
     w.pack()
     ww.pack()
+    www.pack()
 def gameUI():
+    global m 
+    m = tkinter.Tk()
     w = tkinter.Label(m, text='MurderBobADVANCED')
     ww = tkinter.Button(m, text='Play', width=25, command=lambda: cutscene1())
     www = tkinter.Button(m, text='Credits', width=25, command=lambda: credits())
