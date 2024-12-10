@@ -55,7 +55,7 @@ def gameUI():
     wwwww.pack()
     m.mainloop()
 def cutscene1():
-    quit()
+    quitMain()
     cap = cv2.VideoCapture('cutscenes/cutscene1.mp4')
     if (cap.isOpened()== False):
         print("Error opening video file")
