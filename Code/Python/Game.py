@@ -74,18 +74,20 @@ def cutscene2():
     cv2.destroyAllWindows()
 def game():
     # ill MAYBE try to translate this into UI but idk...
-# no worry, I help some time later Greg 
-    print("MurderbobADVANCED")
-    print("A new era for MurderBob.")
-    print("Play")
+    # no worry, I help some time later Greg 
+    # commented out the implemented things
+    # print("MurderbobADVANCED")
+    # print("A new era for MurderBob.")
+    # print("Play")
     print("Settings")
-    print("Credits")
-    opt = input("")
-    if (opt == "Play" or opt == "play"):
-        cutscene1()
-        cutscene2()
-    if (opt == "Settings" or opt == "settings"):
-        print("Nothing's here.. greg")
-        print("-----------------------------------------")
-        game()
+    # print("Credits")
+    # opt = input("")
+    # if (opt == "Play" or opt == "play"):
+    #     cutscene1()
+    #     cutscene2()
+    # if (opt == "Settings" or opt == "settings"):
+    #    print("Nothing's here.. greg")
+    #    print("-----------------------------------------")
+    # note: settings arent implemented but wont work without opt
+    #    game()
 gameUI()
