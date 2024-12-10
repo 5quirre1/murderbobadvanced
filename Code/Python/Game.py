@@ -45,7 +45,8 @@ def cutscene2():
     cap.release()
     cv2.destroyAllWindows()
 def game():
-    # ill MAYBE try to translate this into UI but idk....
+    # ill MAYBE try to translate this into UI but idk...
+# no worry, I help some time later Greg 
     print("MurderbobADVANCED")
     print("A new era for MurderBob.")
     print("Play")
