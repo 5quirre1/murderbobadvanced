@@ -31,6 +31,19 @@ def quitMain():
     m.destroy()
 def quitSettings():
     h.destroy()
+def cutsceneMenu():
+    global b
+    b = tkinter.Tk()
+    def exit():
+        raise SystemExit
+    w = tkinter.Label(b, text="Cutscene Menu")
+    # ww = tkinter.Button(b, text="Skip", width=25, command=lambda: greg())
+    # need to figure out skipping, will do later
+    www = tkinter.Button(b, text="Quit", width=25, command=lambda: exit())
+    w.pack()
+    # ww.pack()
+    www.pack()
+    b.mainloop()
 def settingsUI():
     global h 
     h = tkinter.Tk()
@@ -61,7 +74,6 @@ def cutscene1():
         print("Error opening video file")
 
     while(cap.isOpened()):
-
         ret, frame = cap.read()
         if ret == True:
             cv2.imshow('MurderbobADVANCED | Cutscene 1', frame)
@@ -73,6 +85,12 @@ def cutscene1():
             break
 
     cap.release()
+    cv2.destroyAllWindows()
+    # cutsceneMenu()
+    # while time.sleep(5):
+    #     print(time.time())
+    # b.destory()
+    # isnt working, just keeps looping...
     cutscene2()
 def cutscene2():
     cap = cv2.VideoCapture('cutscenes/cutscene2.mp4')
@@ -87,6 +105,7 @@ def cutscene2():
         else:
             break
     cap.release()
+    cv2.destroyAllWindows()
     cutscene3()
 def cutscene3():
     cap = cv2.VideoCapture('cutscenes/cutscene3.mp4')
